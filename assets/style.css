@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap');
 
-/* Color*/
+/* Colors and Fonts */
 
 :root {
 
@@ -47,6 +47,8 @@ anonymous-pro-regular {
   font-style: normal;
 }
 
+/* Functionalities */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -86,7 +88,7 @@ html { font-family: "Anonymous Pro", monospace; }
 body{
 	margin:0;
 	padding:0;
-  background: url('https://www.toptal.com/designers/subtlepatterns/uploads/dark-triangles.png') repeat 0 0;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/dark-triangles.png') repeat 0 0;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
 	-moz-animation: 10s linear 0s normal none infinite animate;
 	-ms-animation: 10s linear 0s normal none infinite animate;
@@ -127,19 +129,9 @@ main {
 }
 
 .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
-
-.sidebar, article {
-    background: var(--eerie-black2);
-    border: 2px solid var(--orange-yellow-crayola);
-    border-radius: 20px;
-    z-index: 1;
-    padding: 15px;
-}
-
-    .sidebar.active { max-height: 500px; }
 
 .separator {
     width: 100%;
@@ -267,6 +259,16 @@ article { display: none; }
     align-items: center;
     gap: 15px;
 }
+
+.sidebar, article {
+    background: var(--eerie-black2);
+    border: 2px solid var(--orange-yellow-crayola);
+    border-radius: 20px;
+    z-index: 1;
+    padding: 15px;
+}
+
+.sidebar.active { max-height: 500px; }
 
 .avatar-box {
     background-image: linear-gradient(to bottom right, rgb(253, 245, 250), rgb(255, 165, 0));
